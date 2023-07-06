@@ -1,4 +1,4 @@
 
-$ git rm readme.md
+$ git rm readme.mdn
 $ git commit
 $ git push
