@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class tictactoe {
 	
 	static HashSet<Integer> user_set=new HashSet<Integer>();
-	static HashSet<Integer> comp_set=new HashSet<Integer>();   //collection to check the entered number is already present or not 
+	static HashSet<Integer> comp_set=new HashSet<Integer>();   //collection to check the entered number is already exist or not 
 	
 	public static void printboard(char[][] board) { // Method to print the tic tac toe Structure
 		for(int i=0;i<board.length;i++) {
@@ -84,7 +84,7 @@ public class tictactoe {
 		
 	}
 	
-	static String winner() {     // Method for decide the winner
+	static String winner() {     // Method to decide the winner
 		
 		HashSet<Integer> r1=new HashSet<Integer>();
 		r1.add(1);
@@ -159,7 +159,7 @@ public class tictactoe {
 		};
 		
 		System.out.println("TIC TAC TOE");
-		printboard(board);     // Calls the method print the structure
+		printboard(board);     // Calls the method to print the structure
 		
 		System.out.println("What you want to choose: X or O"); 
 		char X_or_O=sc.next().charAt(0);
@@ -179,7 +179,7 @@ public class tictactoe {
 			 while(user_set.contains(input) || comp_set.contains(input)) {
 				 System.out.println("\nPlease Retry, Enter another number:");
 				 input= sc.nextInt();
-			 }//(While loop for checking hashset). The entered number is checked in the hashset if it present. it will ask user to enter another number
+			 }//(While loop for checking hashset). The entered number is checked in the hashset if it present, It will ask user to enter another number
 			}
 				else {
 					System.out.println("Enter number from 1-9: ");
