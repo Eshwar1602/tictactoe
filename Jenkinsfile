@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/your-username/your-repo'
+                git 'https://github.com/Eshwar1602/tictactoe'
             }
         }
 
