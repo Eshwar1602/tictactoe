@@ -3,10 +3,10 @@ pipeline {
 
     stages {
         stage('Clone') {
-            steps {
-                git 'https://github.com/Eshwar1602/tictactoe'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/Eshwar1602/tictactoe'
+    }
+}
 
         stage('Build') {
             steps {
